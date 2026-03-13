@@ -56,11 +56,11 @@
     };
 
     macros {
-        test: tcn {
+        test: test {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp H &kp O &kp N &kp D &kp A &kp LS(B) &kp LS(M) &kp LS(W) &kp N1 &kp N2 &kp N3 &kp EXCL>;
-            label = "TCN";
+            label = "TEST";
         };
     };
 
@@ -79,7 +79,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,
+                // 编码器1：上下滚动,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
