@@ -18,7 +18,11 @@
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
-&msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
+&msc_input_listener { input-processors = <
+        &zip_scroll_scaler 2 1
+        &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT | INPUT_TRANSFORM_X_INVERT)
+>;
+};
 
 &msc {
     acceleration-exponent = <0>;      // 0
