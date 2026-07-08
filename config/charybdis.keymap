@@ -65,7 +65,7 @@
         new_macro: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(S) &kp N5 &kp N8 &kp LS(O) &kp N &kp LS(T) &kp O &kp P &kp N1 &kp N2 &kp N3 &kp EXCL>;
+            bindings = <&none &kp LS(B) &kp LS(M) &kp LS(W) &kp LS(B) &kp E &kp S &kp T &kp LS(M) &kp A &kp N &kp U &kp N1 &kp N2 &kp N3 &kp EXCL>;
             label = "NEW_MACRO";
         };
     };
@@ -85,7 +85,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,,,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
